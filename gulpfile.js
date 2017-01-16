@@ -46,7 +46,7 @@ gulp.task('minify-css', ['less'], function() {
 
 // Minify JS
 gulp.task('minify-js', function() {
-    return gulp.src(appConfig.base + 'js/clapgames.js')
+    return gulp.src(appConfig.base + 'js/**/*.js')
         .pipe(uglify())
         .pipe(header(banner, { pkg: pkg }))
         .pipe(rename({ suffix: '.min' }))
@@ -69,6 +69,9 @@ gulp.task('copy', function() {
    
     gulp.src([appConfig.base + '**/*.html'])
         .pipe(gulp.dest(appConfig.dest))
+    
+    gulp.src([appConfig.base + 'mail/*.*'])
+        .pipe(gulp.dest(appConfig.dest + 'mail/'))
 
     gulp.src([
             'node_modules/font-awesome/**',
