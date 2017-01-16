@@ -1,0 +1,10 @@
+Required s/w:
+=============
+node.js
+gulp
+git
+
+Steps to run the server:
+=============
+1) npm install
+2) gulp dev
