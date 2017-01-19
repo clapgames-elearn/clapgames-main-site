@@ -1,12 +1,10 @@
 {
   "name": "clapgames",
   "title": "clapgames",
-  "version": "1.0",
+  "version": "0.1.0",
   "homepage": "http://clapgames.in",
   "author": "ClapGames",
-  "license": {
-    "type": "MIT"
-  },
+  "license" : "UNLICENSED",
   "devDependencies": {
     "bootstrap": "^3.3.7",
     "browser-sync": "^2.13.0",
