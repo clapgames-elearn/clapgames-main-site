@@ -74,10 +74,17 @@ hr.star-primary:after {
 
 header {
 	text-align: center;
-	background: @theme-success;
+	    margin-top: 57px;
+    background: url(../img/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* border: 1px solid red; */
+    background-size: 100% 100%;
+    max-width: 100%;
+    height: 600px;
 	color: white;
 	.container {
-		padding-top: 100px;
+		padding-top: 10px;
 		padding-bottom: 50px;
 	}
 	img {
@@ -85,6 +92,7 @@ header {
 		margin: 0 auto 20px;
 	}
 	.intro-text {
+		    margin-top: 29px;
 		.name {
 			display: block;
 			font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -102,7 +110,7 @@ header {
 @media(min-width:768px) {
 	header {
 		.container {
-			padding-top: 150px;
+			padding-top: 10px;
 			padding-bottom: 50px;
 		}
 		.intro-text {
@@ -178,7 +186,7 @@ header {
 
 @media(min-width:768px) {
     .navbar-custom {
-        padding: 25px 0;
+        padding: 12px 0;
         -webkit-transition: padding 0.3s;
         -moz-transition: padding 0.3s;
         transition: padding 0.3s;
@@ -190,7 +198,7 @@ header {
 	    }
     }
     .navbar-custom.affix {
-        padding: 10px 0;
+        padding: 5px 0;
 		.navbar-brand {
 	        font-size: 1.5em;
 	    }
